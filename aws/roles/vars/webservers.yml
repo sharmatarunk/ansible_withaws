@@ -1,0 +1,10 @@
+---
+# Variables to provison the web servers
+instance_type: t2.micro
+security_group: tarun-security_group
+image: ami-10918173
+keypair: tarunkeypair
+region: ap-southeast-2
+count: 1
+webserver_tag_name: tarun-webserver
+webserver_tag_type: tarun-dev

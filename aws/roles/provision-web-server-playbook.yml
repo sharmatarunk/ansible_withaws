@@ -1,0 +1,9 @@
+--- 
+- hosts: localhost
+  connection: local
+  gather_facts: false
+  user: tarun
+  pre_tasks:
+    - include_vars: vars/webservers.yml
+  roles:
+    - provision_web_server_role
